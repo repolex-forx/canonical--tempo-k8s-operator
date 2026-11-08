@@ -1,1 +1,158 @@
-Initializing
+# Repolex Knowledge Graph of canonical/tempo-k8s-operator
+
+RDF knowledge graph data for [canonical/tempo-k8s-operator](https://github.com/canonical/tempo-k8s-operator), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download canonical/tempo-k8s-operator
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 16d9d0661a3b64fb146cec7d1f26447937411055
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 16d9d0661a3b64fb146cec7d1f26447937411055
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 03e35cedef901e00ca0eb5fe581b3d614b4e11d1.nq.gz
+│   ├── 05474447b63d93059a9ebcd1ec9825b91d1580c3.nq.gz
+│   ├── 05662d32a9f00c36d28caee4d8303425109bef14.nq.gz
+│   ├── 1080b5fdd1f576db4591a0491fde308ecdc0a212.nq.gz
+│   ├── 136b1e92c0b72a1f769fd5c56fec4931c5db3a01.nq.gz
+│   ├── 1527248b125dabe30867ea3750b2a727c6797536.nq.gz
+│   ├── 16e12946492e73389c70421e1e8a0b525973a505.nq.gz
+│   ├── 18c7453c638ddc12865a8076590f89eb0b8afa59.nq.gz
+│   ├── 1accd8deaba183f8feaaab409282bfbf1cdc22a9.nq.gz
+│   ├── 20d7e4fc25bf5e5462d4f89a1fb54d75603d50d4.nq.gz
+│   ├── 234879efd5da91b1dae79eebad0a49e8ebf7eb7c.nq.gz
+│   ├── 247847c70202ec0a1593744833a805f3eadae65d.nq.gz
+│   ├── 254d1f0bff31928648591584098b4c32da1ffc53.nq.gz
+│   ├── 2b56ee0872a257c00fe688025d660653a1837df5.nq.gz
+│   ├── 2c21d50537b8119430fc4bcf32bf803e77b435da.nq.gz
+│   ├── 2dbdddd684fcbca05ee8994a17d36a5bfd343496.nq.gz
+│   ├── 3505be48e205a6327738986f43300a35dbdbbc84.nq.gz
+│   ├── 36de650ae6d164dc60222cc30df9f6ba3f66a253.nq.gz
+│   ├── 375354836c0870b8cd84e11dfc611e1e0e3509d8.nq.gz
+│   ├── 3c13501eccfacbac6df1207348e00265002520d7.nq.gz
+│   ├── 3c2284ea6cf1c7dafa66a7aaa44b8338add3df64.nq.gz
+│   ├── 3cd6ae2cff63ab3fabd76a99da03b06d656c4fd7.nq.gz
+│   ├── 3d31d897b4a3741096c699333c3d00a3bc8c04a7.nq.gz
+│   ├── 438197a39b6b15a89510f7075269f02519bd5165.nq.gz
+│   ├── 439051e2b1f3bc206d95a5793963009c7567ff52.nq.gz
+│   ├── 46b56bcdfbd1316f2876bcd98ac7ba7aa6939932.nq.gz
+│   ├── 4837887b840031d94cdcf79aba9dfeb0eedea32b.nq.gz
+│   ├── 4a1940b96ca274def67f4cb04c3cfa7d83a0169a.nq.gz
+│   ├── 517811ec8b6d690323a3e1941551f9bdafeb0f35.nq.gz
+│   ├── 51b066afda176dcac1b60092cc915c1ad6dc399f.nq.gz
+│   ├── 5edfcb5793e1965ed52d457d299c416d4f6aad4a.nq.gz
+│   ├── 60bd1f12b4f851b0faea8015df094e5b2faf71f0.nq.gz
+│   ├── 6342d5a651b3341538ccc34764f15e681a9089fe.nq.gz
+│   ├── 644911d1625d499821adf0dca037deabc5a6c398.nq.gz
+│   ├── 67772374e711bf41df974506a490fc4a0ec751ce.nq.gz
+│   ├── 6834282349dc645ed55f6a402de4e265b799f610.nq.gz
+│   ├── 6ccd559eabeae93e4d23215fa450130fa9b37ace.nq.gz
+│   ├── 6f2f4ef4c286124a0d9df49a8290501dae20d04c.nq.gz
+│   ├── 79c0c6f3f524e97607def5c0456fb2fe85e9e24e.nq.gz
+│   ├── 7b49138748deec1d89900002b11da27304d36c34.nq.gz
+│   ├── 7fc195643b3eb1cf65d5c82a5c8871b8c3e27e43.nq.gz
+│   ├── 81ae884e75b94ee72226e7af3c61857f5c3d5008.nq.gz
+│   ├── 81bf1f1f5f8c22abc2d909d797680b1e096439b7.nq.gz
+│   ├── 82801f6a0d4a720167b0c86be8a0945f98854fac.nq.gz
+│   ├── 89a215a7a2f339587b05304839d251fcb858fcfd.nq.gz
+│   ├── 8a03852845426ada2000f5fd0bba803b7192d799.nq.gz
+│   ├── 8e5bbf044f1e054eaaea69191ebfb69500d646b1.nq.gz
+│   ├── 91596a6a259047a94e8474e331dbcd82076eae66.nq.gz
+│   ├── 921f81179a42f44f22bbf9d8e149abba8b25f0c3.nq.gz
+│   ├── 95af9a926f6569867e33f8cae602d2c8433c7e6d.nq.gz
+│   ├── 9774815217f85030b771412b276a39c05796e072.nq.gz
+│   ├── 9a9a30cff928ca7b44536da240f731649db7e090.nq.gz
+│   ├── 9bb42b26f5b00ef97f785abbd5e4f3c10ef3fe95.nq.gz
+│   ├── 9c7d8739a84cb21dd995bd803e846e447c11977e.nq.gz
+│   ├── 9f7f9b32c6a72c3affc54f30f7cdfbf3f9c93209.nq.gz
+│   ├── a3fb91091c5af8099bc9e5e03868241527b8d16c.nq.gz
+│   ├── a68a5803c26f054127753ddcbd73710bc2de10b7.nq.gz
+│   ├── a79e5d4343e09bc07819c1a444ef89d509067388.nq.gz
+│   ├── a9c6f4fea73034146ec566dad61c36313dc91692.nq.gz
+│   ├── af2ddbf724654fc6f330157ade8f149574617d5f.nq.gz
+│   ├── afb45b73f2f044c8c3a1158f7ca35f6038210d82.nq.gz
+│   ├── b103cdc96d2855fe005101e20f61af475b96049c.nq.gz
+│   ├── b2348b9fbfdc4eb154566c80f844510446be1d02.nq.gz
+│   ├── b3674bc0f0a66d1164080650168830021e7288c5.nq.gz
+│   ├── b98498eda2e233a5bd0d1124b0bd2a3622674317.nq.gz
+│   ├── bb7ac5ed576740b2e600a00c621f19ecd4452bd3.nq.gz
+│   ├── bf39b042c1d45e7116aca17e1d4b34d6b85636ea.nq.gz
+│   ├── c0c1fdac38b38c9460c65cd629ec5b2524edad6b.nq.gz
+│   ├── c1f0ea76e562210b4f56855b94f308be2647fb76.nq.gz
+│   ├── c773f1b34f6dc4d02d3ce3dc89149c5a3fcd6f6b.nq.gz
+│   ├── d645695673349e3947e8e5ae42332d0ac3164cd7.nq.gz
+│   ├── da7fa95e69d4eed43f75dfbe0768f5da5421585c.nq.gz
+│   ├── dc182adfc258193890755f151389baf7216d3ac1.nq.gz
+│   ├── dfc32ddcb58ea26f95d94183dfc419c149c95e52.nq.gz
+│   ├── dfdbfd9d8b87efbd74eaa19f4f685ebae50194ab.nq.gz
+│   ├── e3d35c6f308b627d185f4a8ea654acab0fae1654.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── ef9c6b020484a136f6f7566bd015b99bdab0605c.nq.gz
+│   └── f5614aaf6b449c7c45703795fc80e276c60877a1.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 16d9d0661a3b64fb146cec7d1f26447937411055.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 87 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[canonical/tempo-k8s-operator](https://github.com/canonical/tempo-k8s-operator)
+
+---
+*Parsed on 2026-11-08 by [repolex](https://repolex.ai)*

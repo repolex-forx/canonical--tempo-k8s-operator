@@ -1,0 +1,11 @@
+{
+  "org": "canonical",
+  "repo": "tempo-k8s-operator",
+  "versions": [
+    {
+      "commit": "16d9d0661a3b64fb146cec7d1f26447937411055",
+      "tag": "",
+      "parsed_at": "2026-11-08T15:24:10.482018+00:00"
+    }
+  ]
+}
