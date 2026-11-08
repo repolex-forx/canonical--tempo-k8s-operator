@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/canonical/tempo-k8s-operator/commit/16d9d0661a3b64fb146cec7d1f26447937411055",
       "git:hexsha": "16d9d0661a3b64fb146cec7d1f26447937411055",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-11-08T15:24:10.481163+00:00"
     },
     {
       "@id": "https://repolex.ai/r/canonical/tempo-k8s-operator/commit/60d332700365c2e4faaff6730cb877030e9fd12d",
